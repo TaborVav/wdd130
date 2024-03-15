@@ -17,21 +17,19 @@
     <div id="content">
       <header>
         <!-- Logo -->
-        <a id="logo_link" href="images_main/rafting_icon/ccr.png">
-          <!-- Why doesnt this work if I place in Icon folder? -->
+        <!-- <a id="logo_link" href="images_main/rafting_icon/ccr.png">
           <img
             class="logo"
-            src="images/ccr.png"
-            alt="Crystal Current Logo"
+            src="#"
+            alt="#"
             width="220"
-          />
+          /> -->
         </a>
         <nav>
-          <a href="wwr/images_main/rafting_icon/ccr.png">Home</a>
-          <a href="wwr/faq.html">FAQ</a>
-          <a href="site-plan-rafting.html">Site Plan</a>
-          <a href="contactus.html">Contact Us</a>
-        </nav>
+          <a class="nav_link" href="index.html">Home</a>
+          <a class="nav_link" href="about.html">About</a>
+          <a class="nav_link" href="contact.html">Contact</a>
+      </nav> 
       </header>
       <!-- Flow chart for when to use <div> or <section>: 
             http://html5doctor.com/downloads/h5d-sectioning-flowchart.png -->
@@ -47,7 +45,7 @@
               <li>
                 <label for="mail">Email:</label>
                 <input required type="email" id="mail" name="user_email" 
-                placeholder="youre-emailhere@here.com"/>
+                placeholder="your-email@here.com"/>
                 <!-- ^^^^ 'required' makes it w reuired input -->
                 <!-- placeholder puts a ghost text -->
 
@@ -61,41 +59,30 @@
               </li>
             </ul>
           </form>
+
+          <img src="page3/panel.PNG" alt ="main head in the background" width="500">
+
       </main>
       <div class="faq-footer-cont">
         <br>
       
-      <footer class =  "faq-footer">
-        <p>Crystal Current &copy; 2024 - Tabor Vavra</p>
-        <a href="wwr/site-plan-rafting.html">Site Plan</a>
-        <!--What is the <a> here do??? - The <a> tag creates a hyperlink -->
-        <p><a href="contactus.html">Contact Us</a></p>
-        <div class="social">
-          <a href="https://facebook.com" target="_blank">
-            <img
-              src="images_main/rafting_icon/facebook.png"
-              alt="facebook icon"
-            />
-          </a>
-          <a href="https://twitter.com" target="_blank">
-            <img
-              src="images_main/rafting_icon/twitter.png"
-              alt="twitter icon"
-            />
-          </a>
-          <a href="https://instagram.com" target="_blank">
-            <img
-              src="images_main/rafting_icon/instagram.png"
-              alt="instagram icon"
-            />
-          </a>
-        </div>
+        <footer> 
+          <p> Copyright &copy; 2024 - Tabor Vavra</p>
+          <p><a href="contact.html">Contact Me</a></p>
+          <a class="nav_link" href="site-plan.html">Site Plan</a>
+          <div class="social">
+              <a href="#" target="_blank" >
+                  <img src="icons/rsz_icon_facebook.png" alt="facebook icon">
+              </a>
+              <a href="#" target="_blank" >
+                  <img src="icons/rsz_icon_instagram_.png" alt="Instagram icon">
+              </a>
+              <a href="#" target="_blank" >
+                  <img src="icons/rsz_icon_linked_in.png" alt="LinkedIn icon">
+              </a>
+          </div>
       </footer>
-      <img
-        class="peopleraft"
-        src="images_main/rafting_icon/rsz_mushroom-sorting-office-r14a9t6dsy4-unsplash-2.jpg"
-        alt="misty mountains"
-      />
+    
       </div>
       <script>
         // get the feedback div element so we can do something with it.
