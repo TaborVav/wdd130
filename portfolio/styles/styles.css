@@ -120,33 +120,33 @@ header {
     font-style: normal;
     width: 100%;
     /* position: relative; */
-    z-index: 3; /* Ensure the header sits above the background */
+    z-index: 3; 
 }
 
 .nav_link.link-a:hover {
-    color: #f7f3e4; /* Text color on hover for the first link */
-    background-color: #ed583f; /* Background color on hover for the first link */
-    text-decoration: none; /* Remove underline on hover for the first link */
+    color: #f7f3e4; 
+    background-color: #ed583f; 
+    text-decoration: none; 
 }
 
 .nav_link.link-b:hover {
-    color: #f7f3e4; /* Text color on hover for the second link */
-    background-color: #7FBFA2; /* Background color on hover for the second link */
-    text-decoration: none; /* Remove underline on hover for the second link */
+    color: #f7f3e4; 
+    background-color: #7FBFA2; 
+    text-decoration: none; 
 }
 
 .nav_link.link-c:hover {
-    color: #f7f3e4; /* Text color on hover for the third link */
-    background-color: #F3A732; /* Background color on hover for the third link */
-    text-decoration: none; /* Remove underline on hover for the third link */
+    color: #f7f3e4;
+    background-color: #F3A732; 
+    text-decoration: none; 
 }
 
 .nav_link {
     margin-right:0px;
     text-decoration: none;
     color: #333;
-    padding: 40px 40px; /* Adjust padding to create a larger clickable area */
-    transition: background-color 0.3s, color 0.3s; /* Add transition for smooth color change */
+    padding: 40px 40px; 
+    transition: background-color 0.3s, color 0.3s; 
 }
 
 main {
@@ -172,12 +172,40 @@ footer {
     /* padding-top: 20px; */
     /* border-top: 1px solid #dfdbcd; */
     background-color: #f7f3e4;
-    padding: 10px 0;
+    padding: 20px 0;
     /* z-index: 4; */
 }
 
+.contact-link:hover{
+    background-color: #ed583f;
+    color: #f7f3e4; 
+    padding: 8px 100px; 
+    transition: background-color 0.3s, color 0.3s; 
+    text-decoration: none;
+}
+.contact-link-2:hover{
+    background-color: #7FBFA2; 
+    color: #f7f3e4; 
+    padding: 8px 110px; 
+    transition: background-color 0.3s, color 0.3s; 
+    text-decoration: none;
+}
+
+.contact-link {
+    color: #ed583f; 
+    
+}
+.contact-link-2{
+    color: #7FBFA2;
+    padding-bottom: 30px;
+
+}
+
+
+
 .social {
     margin-top: 20px;
+    padding-bottom: 20px;
 }
 
 .social a {
