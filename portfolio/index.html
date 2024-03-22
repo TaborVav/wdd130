@@ -5,45 +5,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href = "styles/styles.css" rel = "stylesheet">
+    <!-- Bootstrap CSS -->
+ <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+    /* Make the image fully responsive */
+    
+    </style>
 </head>
 <body>
-    <div id="content">
+    <div id="slides" class="carousel slide" data-ride="carousel">
+  
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#slides" data-slide-to="0" class="active"></li>
+          <li data-target="#slides" data-slide-to="1"></li>
+          <li data-target="#slides" data-slide-to="2"></li>
+          <li data-target="#slides" data-slide-to="3"></li>
+          
+
+        </ul>
+        
+        <!-- Carousel 1-->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="page1/1_photography.png" alt="Los Angeles" width="1100" height="500">
+          </div>
+          <div class="carousel-item">
+            <img src="page1/2_photography.png" alt="Chicago" width="1100" height="500">
+          </div>
+          <div class="carousel-item">
+            <img src="page1/3_photography.png" alt="New York" width="1100" height="500">
+          </div>
+          <div class="carousel-item">
+            <img src="page1/4_photography.png" alt="New York" width="1100" height="500">
+          </div>
+
+          <!-- Carousel 2-->
+          <!-- <div class="carousel-inner-2"></div>
+          <div class="carousel-item">
+            <img src="page1/4_photography.png" alt="New York" width="1100" height="500">
+          </div> -->
+
+          <!-- Carousel 3-->
+          <!-- <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="page1/1_graphic.png" alt="Los Angeles" width="1100" height="500">
+            </div>
+            <div class="carousel-item">
+              <img src="page1/2_graphic.png" alt="Chicago" width="1100" height="500">
+            </div>
+            <div class="carousel-item">
+              <img src="page1/3_graphic.png" alt="New York" width="1100" height="500">
+            </div>
+            <div class="carousel-item">
+              <img src="page1/4_graphic.png" alt="New York" width="1100" height="500">
+            </div> -->
+  
+          
+        
+          
+        </div>
+        
+        <!-- Left and right controls -->
+        <!-- <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span> -->
+        </a>
+        <!-- <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span> -->
+        </a>
+      </div>
+    <div id="demo">
         <header>
         <nav>
-            <a class="nav_link" href="#">Home</a>
-            <a class="nav_link" href="#">About</a>
+            <a class="nav_link" href="index.html">Home</a>
+            <a class="nav_link" href="about.html">About</a>
             <a class="nav_link" href="contact.html">Contact</a>
 
         </nav> 
         </header>  
         <main>
             <!-- dont forget the alt, it is a descriptor for the blind and other users-->
-            <p></p>
-            <img src="page1/thinking-head.PNG" alt ="main head in the background" width="500">
-            <img src="page1/spain alley.png" alt ="An alley with old biudlings on each side in Spain" width="500">
-            <img src="page1/spain church.png" alt ="A cropted image of some intricate carvings of angels and saints carved into the side of an old church" width="500">
-            <img src="page1/spain corner 2.png" alt ="An image taken from a corner street in spain aimed upward to the square angle of a building" width="500">
-            <img src="page1/spain street corner.png" alt ="an image taken at eye level of a beautiful building on a corner street in spain" width="500">
-            <img src="page1/spain street corner.png" alt ="a newer road in Spain with more modern buildings on each side of it, lookind downa hilla t an intersection" width="500">
-            <img src="page1/IMG_0157.png" alt ="a image of an intricate arche carved into a bridge" width="500">
-            <img src="page1/IMG_9152.png" alt ="an image of the rexburg temple" width="500">
-            <img src="page1/Fancy T ink.png" alt ="The letter 'T' written in fancy script on paper" width="500">
-            <img src="page1/Fancy T velvet.png" alt ="The letter 'T' wrtten in fancy script in gold on a blue velvet fabric" width="500">
-            <img src="page1/Free_Playing_Cards_Mockup_2.png" alt ="a deck of playing cards with skeletons depicted on it" width="500">
-            <img src="page1/Free_Playing_Cards_Mockup_3 copy.png" alt ="a deck of playing cards with skeletons depicted on it" width="500">
-            <img src="page1/rsz_rsco_seedkraft_1.png" alt ="a re-creation of a vintage kids code breaking card" width="500">
-            <img src="page1/rsz_facts.png" alt ="A vintage style page that depicts facts about space" width="500">
-            <img src="page1/rsz_final_mmockup_1.png" alt ="The book 1985 sitting on a square base, it has a dual image of a live and dead rat in conflicting colors and red eyes behind them" width="500">
-            <img src="page1/rsz_final_with_redmockup_1.png" alt ="The book 1985 sitting on a square base, it has a red film blocking out part of the image of  a live and dead rat in conflicting colors and red eyes behind them, instead only shoing the 1984 title and the live rat." width="500">
-            <!-- <img src="#" alt ="#" width="500">
-            <img src="#" alt ="#" width="500">
-            <img src="#" alt ="#" width="500">
-            <img src="#" alt ="#" width="500"> -->
+            <!-- <p>Goals: My aim is to become extremely proficient in UX Design, Prop Design, and every artistically essential Adobe Program. With the goal of working on projects that I find meaningful and beneficial to society, and ultimately to seek a creative director position for a well-established company wherein I can make a larger impact on worldwide media.</p> -->
+            <!-- <div class = backgrounds> 
+                <img class="back1" src="page1/3back.png" alt ="main head in the background" >
+                <img class="back2" src="page1/2back.png" alt ="main head in the background" >
+            </div> -->
             
-            <p>Goals: My aim is to become extremely proficient in UX Design, Prop Design, and every artistically essential Adobe Program. With the goal of working on projects that I find meaningful and beneficial to society, and ultimately to seek a creative director position for a well-established company wherein I can make a larger impact on worldwide media.</p>
+            
+            <img class="background_3" src="page1/1back_.png" alt ="An alley with old biudlings on each side in Spain" width="500">
+           
+            
+            
+            
+           
             
         
-        <main> 
+        </main> 
         <footer> 
             <p> Copyright &copy; 2024 - Tabor Vavra</p>
             <p><a href="contact.html">Contact Me</a></p>
@@ -61,5 +126,17 @@
             </div>
         </footer>
     </div>
+    <script>
+        function showImage(index) {
+            var images = document.querySelectorAll('.carousel-images img');
+            images.forEach(function(img, i) {
+                if (i === index - 1) {
+                    img.style.display = 'block';
+                } else {
+                    img.style.display = 'none';
+                }
+            });
+        }
+    </script>
 </body>
 </html>

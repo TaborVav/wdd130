@@ -9,7 +9,7 @@
   display: grid; 
   /* grid-template-columns: 200px 200px; */
   grid-template-columns: 1fr 1fr; 
-  /* ^^^ 1fr is like saying 50%*/
+  /* ^^^ 1fr is like saying 50%*/ 
   /* ^^^ Dont need the grid template rows becuase there are 6 items and they wrapped around */
   justify-items: center;
   /* ^^^ This term can only be used with grid */
