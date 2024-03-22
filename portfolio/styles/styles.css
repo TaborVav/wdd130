@@ -13,37 +13,37 @@
   }
   
   .carousel.slide {
-    position: absolute;
+    /* position: absolute; */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%;
-    display: grid;
+    /* display: grid; */
     place-items: center;
     z-index: 2;
 }
 #slides {
-    position: absolute;
+    /* position: absolute; */
     top: 300px; 
     left: 50%;
     transform: translate(-50%, -50%);
     width: 40%; /* Adjust as needed */
     max-width: 800px; /* Set a maximum width */
     height: auto; /* Allow the height to adjust proportionally */
-    display: grid;
+    /* display: grid; */
     place-items: center;
     z-index: 2;
 }
 
 .background_3 {
-    position: absolute;
+    /* position: absolute; */
     top: 500px; /* Adjust as needed */
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%; /* Adjust as needed */
     max-width: 800px; /* Set a maximum width */
     height: auto; /* Allow the height to adjust proportionally */
-    display: grid;
+    /* display: grid; */
     place-items: center;
     z-index: 1;
 }
@@ -89,7 +89,7 @@
 
 
 body {
-        position: relative;
+        /* position: relative; */
         background-color: rgb(255, 255, 255);
         font-family: "futura-pt", sans-serif, sans-serif, Helvetica, Arial, sans-serif;
         font-weight: 300;
@@ -119,20 +119,34 @@ header {
     font-size: 1.2em;
     font-style: normal;
     width: 100%;
-    position: relative; /* Add position relative to allow z-index to work */
+    /* position: relative; */
     z-index: 3; /* Ensure the header sits above the background */
 }
 
-nav:hover {
-    /* margin-top: 300px; */
-    color:#f7f3e4;
-    /* background-color: #ed583f */
+.nav_link.link-a:hover {
+    color: #f7f3e4; /* Text color on hover for the first link */
+    background-color: #ed583f; /* Background color on hover for the first link */
+    text-decoration: none; /* Remove underline on hover for the first link */
+}
+
+.nav_link.link-b:hover {
+    color: #f7f3e4; /* Text color on hover for the second link */
+    background-color: #7FBFA2; /* Background color on hover for the second link */
+    text-decoration: none; /* Remove underline on hover for the second link */
+}
+
+.nav_link.link-c:hover {
+    color: #f7f3e4; /* Text color on hover for the third link */
+    background-color: #F3A732; /* Background color on hover for the third link */
+    text-decoration: none; /* Remove underline on hover for the third link */
 }
 
 .nav_link {
-    margin-right: 20px;
+    margin-right:0px;
     text-decoration: none;
     color: #333;
+    padding: 40px 40px; /* Adjust padding to create a larger clickable area */
+    transition: background-color 0.3s, color 0.3s; /* Add transition for smooth color change */
 }
 
 main {
@@ -149,8 +163,8 @@ main {
 } */
 
 footer {
-    position: absolute;
-    bottom: 0;
+    /* position: absolute; */
+    top: 90vh;
     text-align: center;
     height: 200px;
     width: 100%;
@@ -159,6 +173,7 @@ footer {
     /* border-top: 1px solid #dfdbcd; */
     background-color: #f7f3e4;
     padding: 10px 0;
+    /* z-index: 4; */
 }
 
 .social {
