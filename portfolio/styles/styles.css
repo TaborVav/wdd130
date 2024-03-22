@@ -27,7 +27,7 @@
     top: 300px; 
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50%; /* Adjust as needed */
+    width: 40%; /* Adjust as needed */
     max-width: 800px; /* Set a maximum width */
     height: auto; /* Allow the height to adjust proportionally */
     display: grid;
@@ -50,7 +50,8 @@
 
 @media screen and (max-width: 768px) {
     #slides {
-        width: 90%;
+        width: 60%;
+        top: 350px; 
     }
 }
 
@@ -148,9 +149,13 @@ main {
 } */
 
 footer {
+    position: absolute;
+    bottom: 0;
     text-align: center;
+    height: 200px;
+    width: 100%;
     /* margin-top: 20px; */
-    padding-top: 20px;
+    /* padding-top: 20px; */
     /* border-top: 1px solid #dfdbcd; */
     background-color: #f7f3e4;
     padding: 10px 0;
