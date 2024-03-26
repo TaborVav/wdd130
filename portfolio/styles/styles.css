@@ -28,19 +28,30 @@ header img {
     place-items: center;
     z-index: 2;
 }
-#slides {
-    /* position: absolute; */
-    /* top: 300px; 
-    left: 50%; */
-    /* transform: translate(-50%, -50%); */
-    width: 40%; /* Adjust as needed */
-    max-width: 1000px; /* Set a maximum width */
-    height: auto; /* Allow the height to adjust proportionally */
-    /* display: grid; */
-    place-items: center;
-    z-index: 2;
+
+#slides1 {
+    width: 100%;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    align-self: center;
+    justify-self: center;
 }
 
+#slides2 {
+    width: 100%;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    align-self: center;
+    justify-self: center;
+}
+
+#slides3 {
+    width: 100%;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    align-self: center;
+    justify-self: center;
+}
 
 .background_3 {
     /* position: absolute; */
@@ -64,13 +75,7 @@ header img {
     grid-template-columns: 1fr 5fr 1fr;
     margin: 0 200px;
 }
-#slides {
-    width: 100%;
-    grid-row: 1/2;
-    grid-column: 2/3;
-    align-self: center;
-    justify-self: center;
-}
+
 #trio{
     width: 100%;
     grid-row: 2/4;
