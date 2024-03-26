@@ -58,6 +58,7 @@ header img {
 .photography-slides, .graphic-design-slides, .typography-slides {
     display: none;
 }
+
 #home-grid {
     display:grid;
     grid-template-columns: 1fr 5fr 1fr;
@@ -281,3 +282,6 @@ footer .little-guy img {
         margin: 0 50px;
     }
 } 
+
+
+/* ----------------------------- */
