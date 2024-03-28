@@ -60,83 +60,83 @@
           <img class="pointer" src="page3/pointer.PNG" alt ="Little guy pointing at box" width="500">
 
       </main>
-      <div class="faq-footer-cont">
-        <br>
-      
-        <footer> 
-          <a href="site-plan.html" class="contact-link-2" >Site Plan</a>
-          <p></p>
-          <p><a href="contact.html" class="contact-link">Contact Me</a></p>
-      
-          <div class="social">
-              <a href="#" target="_blank" >
-                  <img src="page1/icon_facebook.png" alt="facebook icon">
-              </a>
-              <a href="#" target="_blank" >
-                  <img src="page1/icon_instagram_.png" alt="Instagram icon">
-              </a>
-              <a href="#" target="_blank" >
-                  <img src="page1/icon_linked_in.png" alt="LinkedIn icon">
-              </a>
-          </div>
-          <p>Copyright &copy; 2024 - Tabor Vavra</p>
+      <footer>
+        <a href="site-plan.html" class="contact-link-2">Site Plan</a>
+        <p></p>
+        <p><a href="contact.html" class="contact-link">Contact Me</a></p>
+  
+        <div class="social">
+          <a href="#" target="_blank">
+            <img src="page1/icon_facebook.png" alt="facebook icon" />
+          </a>
+          <a href="#" target="_blank">
+            <img src="page1/icon_instagram_.png" alt="Instagram icon" />
+          </a>
+          <a href="#" target="_blank">
+            <img src="page1/icon_linked_in.png" alt="LinkedIn icon" />
+          </a>
         </div>
-      <div class="little-guy">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img
-                class="category typography"
-                src="page1/littleguy.png"
-                alt="little guy flying a kite"
-                width="60"
-              />
-            </div>
-            <div class="flip-card-back">
-              <h1>Thank You!</h1>
-              <p>For visiting my site!</p>
-              <!-- <p>We love that guy</p> -->
+        <p>Copyright &copy; 2024 - Tabor Vavra</p>
+        <div class="little-guy">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  class="category typography"
+                  src="page1/littleguy.png"
+                  alt="little guy flying a kite"
+                  width="60"
+                />
+              </div>
+              <div class="flip-card-back">
+                <h1>Thank You!</h1>
+                <p>For visiting my site!</p>
+                <!-- <p>We love that guy</p> -->
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <p></p>
-    
-    </footer>
+        <p></p>
+  
+      </footer>
       <script>
-        // get the feedback div element so we can do something with it.
-        const feedbackElement = document.getElementById('feedback');
-        // get the form so we can read what was entered in it.
-        const formElement = document.forms[0];
-        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
-        formElement.addEventListener('submit', function(e) {
-            // stop the form from doing the default action.
-            e.preventDefault();
-            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
-            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
-            // make the feedback element visible.
-            feedbackElement.style.display = "block";
-            // add a class to move everything down so our message doesn't cover it.
-            document.body.classList.toggle('moveDown');
-        });
-    </script>
-    
-    
-    <script>
-      var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
-}
-    </script>
-  </body>
-</html>
+        function showImage(index) {
+          var images = document.querySelectorAll(".carousel-images img");
+          images.forEach(function (img, i) {
+            if (i === index - 1) {
+              img.style.display = "block";
+            } else {
+              img.style.display = "none";
+            }
+          });
+        }
+        let photographySlides = document.querySelector(".photography-slides");
+        let graphicDesignSlides = document.querySelector(
+          ".graphic-design-slides"
+        );
+        let typographySlides = document.querySelector(".typography-slides");
+        let photography = document.querySelector(".photography");
+        let graphicDesign = document.querySelector(".graphic_design");
+        let typography = document.querySelector(".typography");
+        // photographySlides.style.display = "block";
+        function showPhotography() {
+          photographySlides.style.display = "block";
+          graphicDesignSlides.style.display = "none";
+          typographySlides.style.display = "none";
+        }
+        function showGraphicDesign() {
+          photographySlides.style.display = "none";
+          graphicDesignSlides.style.display = "block";
+          typographySlides.style.display = "none";
+        }
+        function showTypography() {
+          photographySlides.style.display = "none";
+          graphicDesignSlides.style.display = "none";
+          typographySlides.style.display = "block";
+        }
+        photography.addEventListener("click", showPhotography);
+        graphicDesign.addEventListener("click", showGraphicDesign);
+        typography.addEventListener("click", showTypography);
+      </script>
+    </body>
+  </html>
