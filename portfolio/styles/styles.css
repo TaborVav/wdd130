@@ -13,10 +13,11 @@ header img {
 .carousel-inner img{
     max-width: 100%;
     height: auto;
+    transition: transform 0.1s;
   }
   
 
-  .carousel.slide {
+.carousel.slide {
     /* position: absolute; */
     /* top: 50%;
     left: 50%; */
